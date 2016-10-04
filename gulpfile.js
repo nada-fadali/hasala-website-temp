@@ -6,8 +6,8 @@ var gulp = require('gulp'),
 	data = require('gulp-data'),
 	pug = require('gulp-pug'),
 	prefix = require('gulp-autoprefixer'),
-	sass = require('gulp-sass');
-	// browserSync = require('browser-sync');
+	sass = require('gulp-sass'),
+	browserSync = require('browser-sync');
 
 /*
 * Change directories here
@@ -34,21 +34,21 @@ gulp.task('pug', function () {
 /**
  * Recompile .pug files and live reload the browser
  */
-// gulp.task('pug-rebuild', ['pug'], function () {
-// 	browserSync.reload();
-// });
+gulp.task('pug-rebuild', ['pug'], function () {
+	browserSync.reload();
+});
 
 /**
  * Wait for pug and sass tasks, then launch the browser-sync Server
  */
-// gulp.task('browser-sync', ['sass', 'pug'], function () {
-// 	browserSync({
-// 		server: {
-// 			baseDir: settings.publicDir
-// 		},
-// 		notify: false
-// 	});
-// });
+gulp.task('browser-sync', ['sass', 'pug'], function () {
+	browserSync({
+		server: {
+			baseDir: settings.publicDir
+		},
+		notify: false
+	});
+});
 
 /**
  * Compile .scss files into public css directory With autoprefixer no
@@ -62,23 +62,22 @@ gulp.task('sass', function () {
 		}))
 		.on('error', sass.logError)
 		.pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-		.pipe(gulp.dest(settings.cssDir));
-		// .pipe(browserSync.reload({stream: true}));
+		.pipe(gulp.dest(settings.cssDir))
+		.pipe(browserSync.reload({stream: true}));
 });
 
 /**
  * Watch scss files for changes & recompile
  * Watch .pug files run pug-rebuild then reload BrowserSync
  */
-// gulp.task('watch', function () {
-// 	gulp.watch(settings.sassDir + '/**', ['sass']);
-// 	gulp.watch(['*.pug', '**/*.pug'], ['pug-rebuild']);
-// });
+gulp.task('watch', function () {
+	gulp.watch(settings.sassDir + '/**', ['sass']);
+	gulp.watch(['*.pug', '**/*.pug'], ['pug-rebuild']);
+});
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync then watch
  * files for changes
  */
-// gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('default', ['sass', 'pug']);
+gulp.task('default', ['browser-sync', 'watch']);
