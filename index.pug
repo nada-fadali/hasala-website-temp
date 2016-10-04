@@ -1,10 +1,10 @@
-extends _layouts/home
+extends _layouts/application
 
 block head_end
 	link(rel="stylesheet" href="assets/css/style.css") 
 
 block content
-	include _partials/header
+	include _partials/content
 
-block body_end
+block scripts
 	script(type="text/javascript" src="assets/js/script.js")
