@@ -1,0 +1,52 @@
+footer{
+	width: 100%;
+	color: #fff;
+	background-image: url(/assets/img/footer-bg.png);
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	padding-bottom: 16px;
+
+	h1, div, h2{
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 19px;
+	}
+
+	h1{
+		@include sr-only('/assets/img/logo-footer.png' ,104px ,80px);
+		display: inline-block;
+	}
+
+	.copyright{
+		font-size: 14px;
+	}
+
+	a.fb{
+		margin-left: 30px;
+
+		span{
+			@include sr-only('/assets/img/fb.png' ,28px ,28px);
+			display: inline-block;
+		}
+	}
+
+
+	.app{
+		margin-left: 70px;
+
+		a.android{
+			span{
+				@include sr-only('/assets/img/android.png' ,131px ,39px);
+				display: inline-block;
+			}
+		}
+
+		a.ios{
+			span{
+				@include sr-only('/assets/img/ios.png' ,131px ,39px);
+				display: inline-block;
+			}
+		}
+	}
+}

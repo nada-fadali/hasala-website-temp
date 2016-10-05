@@ -1,0 +1,30 @@
+.articles{
+	background-color: #F2F2F2;
+	width: 100%;
+	padding: 30px 70px;
+
+	h1{
+		width: 20%;
+		float: left;
+		color: #92C510;
+		background-image: url(/assets/img/leaf.png);
+		background-repeat: no-repeat;
+		padding-top: 75px;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	.content{
+		width: 80%;
+		float: left;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		a{
+			font-size: 0;
+		}
+
+	}
+
+}
