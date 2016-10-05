@@ -1,0 +1,98 @@
+.contact{
+	h1{
+		width: 100%;
+		background-color: #FF9900;
+		color: #fff;
+		font-size: 33px;
+		padding: 30px 0;
+		text-transform: uppercase;
+		text-align: center;
+		background-image: url(/assets/img/email.png);
+		background-repeat: no-repeat;
+		background-position: 38% 50%
+	}
+
+
+	.content{
+		width: 100%;
+		padding: 50px 100px;
+
+		h2{
+			width: 10%;
+			float: left;
+			color: #FF9900;
+			background-image: url(/assets/img/leaf.png);
+			background-repeat: no-repeat;
+			padding-top: 75px;
+			font-size: 25px;
+		}
+
+		form.contact{
+			width: 60%;
+			float: left;
+			margin-left: 20%;
+
+			label{
+				display: block;
+				color: #808080;
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+
+			input[type="text"],
+			textarea{
+				background:transparent;
+				border: 1px solid #d8d8d8;
+				padding: 7px 10px;
+				width: 100%;
+			}
+
+			textarea{
+				height: 200px;
+			}
+
+			.form-group{
+				margin-bottom: 20px;
+			}
+
+			.form-group.col{
+				width: 50%;
+				display: inline-block;
+			}
+
+			.form-group.col + .form-group.col{
+				padding-left: 10px;
+			}
+
+			button{
+				background-color: #92C510;
+				color: #fff;
+				font-size: 15px;
+				letter-spacing: 1px;
+				font-weight: bold;
+				padding: 7px 37px;
+				border: none;
+				text-transform: uppercase;
+			}
+
+			.form-group.radio{
+				label{
+					width: 20%;
+					// background-color: #8FC703;
+					display: inline-block;
+					// color: #fff;
+					padding: 10px;
+					text-align: center;
+					border: 1px solid #d8d8d8;
+					background-color: #f2f2f2;
+					color: #828282;
+
+					input[type="radio"]{
+						opacity:0.01;
+						z-index:100;
+					}
+				}
+			}
+		}
+	}
+}
