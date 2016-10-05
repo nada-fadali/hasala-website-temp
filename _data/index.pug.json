@@ -1,5 +1,13 @@
 {
-	"title": "TEST",
-	"welcome": "HERE WILL BE THE WEBSITE",
-	"link": "/"
+	"title": "Hasala",
+  "fbLink": "https://www.facebook.com/hasalaapp/",
+  "arabicLink": "#!",
+  "engLink": "#!",
+  "thinkMarketing": "#!",
+  "masry": "#!",
+  "ahram": "#!",
+  "wamda": "#!",
+  "huffPost": "#!",
+  "android": "#!",
+  "ios": "#!"
 }

@@ -1,2 +1,97 @@
 header
-	h1= welcome
+	.nav
+		.logo
+			h1 Hasala
+		.links
+			ul
+				li.fb
+					a(href=fbLink) Facebook
+				li.arabic
+					a(href=arabicLink) Arabic
+				li.eng
+					a(href=engLink) English
+
+	.header-content
+		.tagline
+			p Based in Egypt
+			h1 A simple, selective and credible donation platform
+		form.rss
+			input(type="email")
+			button(type="submit") Subscribe
+		.awards
+			h2 Awards
+			.mal
+				h3 MAL Competition
+				p Hasala won mobile application Launchpad competition powered by Google, MIT EF Arab and TIEC
+			.betapitch
+				h3 Betapitch
+				p Hasala won  rst place at Betapitch cairo competition powered by Betahaus and Riseup and pitching in Berlin For the Betapitch Global and investors day.
+
+
+.contact
+	h1 Contact Us
+	.content
+		h2 Contact Form
+		form.contact
+			.form-group
+				label
+					input(type="radio" name="type") 
+					| Corportation
+				label
+					input(type="radio" name="type") 
+					| Individual
+				label
+					input(type="radio" name="type") 
+					| CSR
+				label
+					input(type="radio" name="type") 
+					| Media
+				label
+					input(type="radio" name="type") 
+					| NGO
+			.form-group
+				label First name:
+				input(type="text")
+			.form-group
+				label Last name:
+				input(type="text")
+			.form-group
+				label Position:
+				input(type="text")
+			.form-group
+				label Message name:
+				textarea
+			button(type="submit") Send
+
+
+.articles
+	h1 Featured in:
+	.content
+		a(href=thinkMarketing) 
+			img(src="assets/img/thinkmarketing.png")
+			| Think Marketing
+		a(href=masry) 
+			img(src="assets/img/masry.png")
+			| Masry Elyoum
+		a(href=ahram) 
+			img(src="assets/img/ahram.png")
+			| Ahram
+		a(href=wamda) 
+			img(src="assets/img/wamda.png")
+			| Wamda
+		a(href=huffPost) 
+			img(src="assets/img/huffpost.png")
+			| The Huffington Post
+
+footer
+	h1 Hasala
+	.copyright
+		p &copy; HASALA 2016 - ALL RIGHTS RESERVED
+	.fb
+		a(href=fbLink) Facebook	
+	.app
+		h2 App soon on
+		a(href=android) Google Play
+		a(href=ios) App Store
+
+
