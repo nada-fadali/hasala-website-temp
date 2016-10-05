@@ -1,0 +1,11 @@
+@mixin sr-only($src, $width, $height) {
+	background-image: url($src);
+	background-repeat: no-repeat;
+	display: block;
+	outline: none;
+	overflow: hidden;
+	text-indent: -999px;
+	width: $width;
+	height: $height;
+	font-size: 0;
+}

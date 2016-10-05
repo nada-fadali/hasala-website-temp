@@ -1,11 +1,12 @@
 extends _layouts/application
 
 block head
-  link(rel="stylesheet" href="assets/css/style.css") 
+	link(rel="stylesheet" href="bower_components/normalize.css/normalize.css") 
+	link(rel="stylesheet" href="assets/css/style.css") 
 
 block content
-  include _partials/content
+	include _partials/content
 
 block scripts
-  script(type="text/javascript" src="bower_components/jquery/dist/jquery.min.js")
-  script(type="text/javascript" src="assets/js/script.js")
+	script(type="text/javascript" src="bower_components/jquery/dist/jquery.min.js")
+	script(type="text/javascript" src="assets/js/script.js")

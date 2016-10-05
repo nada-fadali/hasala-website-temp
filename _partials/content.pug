@@ -1,31 +1,33 @@
 header
-	.nav
-		.logo
-			h1 Hasala
-		.links
-			ul
-				li.fb
-					a(href=fbLink) Facebook
-				li.arabic
-					a(href=arabicLink) Arabic
-				li.eng
-					a(href=engLink) English
+	.content-wrapper
+		.nav.clearfix
+			.logo
+				h1 Hasala
+			.links
+				a.fb(href=fbLink)
+					span Facebook
+				a.arabic(href=arabicLink)
+					span عربي
+				a.eng(href=engLink)
+					span Eng
 
-	.header-content
-		.tagline
-			p Based in Egypt
-			h1 A simple, selective and credible donation platform
-		form.rss
-			input(type="email")
-			button(type="submit") Subscribe
-		.awards
-			h2 Awards
-			.mal
-				h3 MAL Competition
-				p Hasala won mobile application Launchpad competition powered by Google, MIT EF Arab and TIEC
-			.betapitch
-				h3 Betapitch
-				p Hasala won  rst place at Betapitch cairo competition powered by Betahaus and Riseup and pitching in Berlin For the Betapitch Global and investors day.
+		.content
+			.tagline
+				p Based in Egypt
+				h1 A simple, selective and credible donation platform
+			form.rss
+				label(for="email") Email
+				input(type="email")
+				button(type="submit") Subscribe
+			hr
+			.awards.clearfix
+				h2 Awards
+				.mal
+					h3 MAL Competition
+					p Hasala won mobile application Launchpad competition powered by Google, MIT EF Arab and TIEC
+				.betapitch
+					h3 Betapitch
+					p Hasala won  rst place at Betapitch cairo competition powered by Betahaus and Riseup and pitching in Berlin For the Betapitch Global and investors day.
 
 
 .contact

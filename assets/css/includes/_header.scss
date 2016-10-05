@@ -1,0 +1,189 @@
+header{
+
+	width: 100%;
+	background-image: url(/assets/img/hero-bg.png);
+	height: 660px;
+
+	.content-wrapper{
+		background-color: rgba(102,153,0,0.72);
+		width: 100%;
+		height: 100%;
+
+		.nav{
+			// margin-bottom: 100px;
+
+			.logo{
+				float: left;
+				width: 50%;
+
+				h1{
+					@include sr-only('/assets/img/logo.png' ,160px ,119px);
+				}
+			}
+
+			.links{
+				width: 50%;
+				float: right;
+				padding: 30px 40px;
+				text-align: right;
+
+				a{
+					display: inline-block;
+					span{
+						color: #fcfcfc;
+						font-size: 20px;
+					}
+				}
+
+				a.fb{
+					margin-right: 50px;
+					padding-top: 10px;
+					span{
+						@include sr-only('/assets/img/fb.png' ,28px ,28px);
+					}
+				}
+
+				a.eng,
+				a.arabic{
+					margin: 0 10px;
+				}
+			}
+		} // end of nav
+
+
+		.content{
+			width: 100%;
+			background-image: url(/assets/img/hero.png);
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: -145px -45px;
+			margin-top: -47px;
+			color: #fff;
+			padding-right: 50px;
+
+
+			.tagline{
+				width: 50%;
+				margin-left: 50%;
+				margin-bottom: 40px;
+
+				p{
+					font-size: 14px;
+					margin-bottom: 20px;
+					background-image: url(/assets/img/pin.png);
+					background-repeat: no-repeat;
+			    padding-left: 20px;
+			    background-position: 0px 30px;
+				}
+
+				h1{
+					text-transform: uppercase;
+					font-size: 30px;
+					letter-spacing: 1px;
+				}
+			}
+
+			form.rss{
+				width: 50%;
+				margin-left: 50%;
+				margin-bottom: 20px;
+
+				label{
+					display: block;
+					font-size: 15px;
+				}
+
+				input[type="email"]{
+					width: 280px;
+					margin-right: 20px;
+					padding: 6px 0;
+					background: transparent;
+					border: 1px solid #fff;
+				}
+
+
+				button{
+					background-color: #92C510;
+					color: #fff;
+					font-size: 15px;
+					letter-spacing: 1px;
+					font-weight: bold;
+					padding: 7px 37px;
+					border: none;
+					text-transform: uppercase;
+
+				}
+
+			}
+
+			hr{
+				width: 50%;
+				margin-left: 50%;
+				border-color: rgba(255,255,255,0.5);
+				margin-bottom: 20px;
+			}
+
+			.awards{
+				width: 50%;
+				margin-left: 50%;
+
+				h2,
+				.mal,
+				.betapitch{
+					width: 35%;
+					height: 100px;
+					display: inline-block;
+					vertical-align: top;
+					text-align: center;
+				}
+
+				h2{
+					text-align: left;
+					width: 20%;
+					margin-top: 15px;
+				}
+
+				h2,h3{
+					font-size: 19px;
+					text-transform: uppercase;
+				}
+				p{
+					font-size: 12px;
+					margin-top: 10px;
+					width: 100%;
+					line-height: 14px;
+				}
+
+				h2{
+					background-image: url(/assets/img/cup.png);
+					background-repeat: no-repeat;
+					background-position: 0 50%;
+					padding-top: 81px;
+				}
+
+				.mal{
+					margin-right: 45px;
+				}
+
+				.mal h3{
+					background-image: url(/assets/img/mal-win.png);
+					background-repeat: no-repeat;
+					background-position: 40% 50%;
+					padding-top: 150px;
+				}
+
+				.betapitch h3{
+					background-image: url(/assets/img/betapitch-win.png);
+					background-repeat: no-repeat;
+					background-position: 40% 50%;
+					padding-top: 150px;
+				}
+
+			}
+
+
+		}
+
+	}// end content wrapper
+
+}

@@ -2,6 +2,5 @@
 node_modules
 .sass-cache
 *.thumb
-bower_components
 .DS_Store
 npm-debug.log
