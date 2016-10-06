@@ -92,7 +92,13 @@
 						opacity:0.01;
 						z-index:100;
 					}
+
+					&.selected{
+						background-color: #8FC703;
+						color: #fff;
+					}
 				}
+
 			}
 		}
 	}
