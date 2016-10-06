@@ -1,7 +1,6 @@
 <?php
 
 if(isset($_POST['email'])) {
-
 	function died($error) {
 		// your error code can go here
 		echo "Error yo";
@@ -34,11 +33,7 @@ if(isset($_POST['email'])) {
 	}
 
 	$email_message .= .clean_string($first_name)." ".clean_string($last_name)." sent this message \n";
-	$email_message = .$message;
-
-
-
-
+	$email_message .= $message;
 
 	// create email headers
 
