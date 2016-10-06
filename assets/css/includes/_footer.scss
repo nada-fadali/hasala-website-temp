@@ -16,29 +16,38 @@ footer{
 	h1{
 		@include sr-only('/assets/img/logo-footer.png' ,104px ,80px);
 		display: inline-block;
+		vertical-align: middle;
 	}
 
 	.copyright{
 		font-size: 14px;
+		vertical-align: middle;
+		margin-top: 25px;
 	}
 
 	a.fb{
 		margin-left: 30px;
+		vertical-align: middle;
+		margin-top: 20px;
 
 		span{
 			@include sr-only('/assets/img/fb.png' ,28px ,28px);
 			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
 
 	.app{
 		margin-left: 70px;
+		vertical-align: middle;
+		margin-top: 20px;
 
 		a.android{
 			span{
 				@include sr-only('/assets/img/android.png' ,131px ,39px);
 				display: inline-block;
+				vertical-align: middle;
 			}
 		}
 
@@ -46,6 +55,7 @@ footer{
 			span{
 				@include sr-only('/assets/img/ios.png' ,131px ,39px);
 				display: inline-block;
+				vertical-align: middle;
 			}
 		}
 	}
