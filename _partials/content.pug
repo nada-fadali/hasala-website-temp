@@ -44,7 +44,7 @@ header
 	h1 Contact Us
 	.content.clearfix
 		h2 Contact Form
-		form.contact(action="/scripts/contact.php" method="post")
+		form.contact#contact
 			.form-group.radio
 				label.selected
 					input(type="radio" name="type" value="0") 
@@ -63,13 +63,13 @@ header
 					| NGO
 			.form-group.col
 				label First name:
-				input(type="text")
+				input(type="text", name="first_name")
 			.form-group.col
 				label Last name:
-				input(type="text")
+				input(type="text", name="last_name")
 			.form-group
 				label Position:
-				input(type="text")
+				input(type="text", name="message")
 			.form-group
 				label Message name:
 				textarea
