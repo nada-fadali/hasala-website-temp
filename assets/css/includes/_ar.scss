@@ -1,0 +1,35 @@
+.ar{
+	text-align: right;
+
+	header .content-wrapper .content .tagline p{
+		background-position-x: 100%;
+		padding-right: 4%;
+	}
+
+
+	header .content-wrapper .content .awards h2{
+		float: right;
+		text-align: right;
+		background-position-x: 100%;
+	}
+
+	header .content-wrapper .content form.rss input[type="email"]{
+		margin: 0 0 0 20px;
+	}
+
+	@include mobile{
+		header .content-wrapper .content .tagline p{
+			background-position-x: 95%;
+			padding-right: 10%;
+		}
+	}
+
+
+	.articles h1{
+		text-align: left;
+	}
+
+	footer{
+		text-align: left;
+	}
+}

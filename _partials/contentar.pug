@@ -1,0 +1,100 @@
+.ar
+	header
+		.content-wrapper
+			.nav.clearfix
+				.logo
+					h1 حصالة
+				.links
+					a.fb(href=fbLink)
+						span Facebook
+					a.arabic(href=arabicLink)
+						span عربي
+					a.eng(href=engLink)
+						span Eng
+
+			.content
+				.tagline
+					p مقرها في مصر
+					h1 منصة للتبرع تجمع بين السهولة ، المصداقية ،والانتقائية
+				form.rss
+					label(for="email") برديك
+					button(type="submit") اشترك
+					input(type="email")
+				hr
+				.awards.clearfix
+					h2 الجوائز
+					.mal
+						h3 MAL
+						p فازت حصالة بالمركز الاول فى مسابقة MAL وهىمسابقة تحت رعاية جوجل ،MIT Arabو TEIC
+					.betapitch
+						h3 Betapitch
+						p Betapitch فازت حصالة بالمركز الاول فى مسابقة تحت رعاية BetaHaus و Riseup وتأهلت لعرض الفكرة فى برلين مع باقى المتأهلين من الدول الاخرى
+
+
+	.contact
+		h1 تواصل معنا
+		.content.clearfix
+			h2  بيانات التواصل 
+			form.contact
+				.form-group.radio
+					label
+						input(type="radio" name="type") 
+						| مؤسسة
+					label
+						input(type="radio" name="type") 
+						| فرد
+					label
+						input(type="radio" name="type") 
+						| CSR
+					label
+						input(type="radio" name="type") 
+						| اعلام
+					label
+						input(type="radio" name="type") 
+						| NGO
+				.form-group.col
+					label الاسم الاول
+					input(type="text")
+				.form-group.col
+					label اسم العائلة
+					input(type="text")
+				.form-group
+					label الوظيفة
+					input(type="text")
+				.form-group
+					label الرسالة
+					textarea
+				button(type="submit") ارسل
+
+
+	.articles.clearfix
+		h1 نشر عن حصالة
+		.content
+			a(href=thinkMarketing) 
+				img(src="assets/img/thinkmarketing.png")
+				| Think Marketing
+			a(href=masry) 
+				img(src="assets/img/masry.png")
+				| Masry Elyoum
+			a(href=ahram) 
+				img(src="assets/img/ahram.png")
+				| Ahram
+			a(href=wamda) 
+				img(src="assets/img/wamda.png")
+				| Wamda
+			a(href=huffPost) 
+				img(src="assets/img/huffpost.png")
+				| The Huffington Post
+
+	footer
+		h1 Hasala
+		.copyright
+			p &copy; HASALA 2016 - جميع الحقوق محفوظه
+		a.fb(href=fbLink) 
+			span Facebook	
+		.app
+			h2 قريبا
+			a.android(href=android) 
+				span Google Play
+			a.ios(href=ios) 
+				span App Store
