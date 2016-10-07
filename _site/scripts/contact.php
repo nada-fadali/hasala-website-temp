@@ -47,6 +47,7 @@ if(isset($_POST['type'])) {
 
 	// EDIT
 	$email_to = "nada.fadali@gmail.com";
+	$email_from = "root@ubuntu-512mb-lon1-01";
 	$email_subject = $first_name . " contacted Hasala [".$type."]";
 
 
