@@ -28,7 +28,7 @@ $(function(){
 			'position': $('input[name=position]').val(),
 		  'first_name': $('input[name=first_name]').val(),
 		  'last_name': $('input[name=last_name]').val(),
-		  'message': $('input[name=message]').val()
+		  'message': $('textarea[name=message]').val()
 		};
 
 
