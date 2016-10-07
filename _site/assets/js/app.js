@@ -24,7 +24,7 @@ $(function(){
 		ev.preventDefault();
 
 		var data = {
-			'type': $('input[name=type]').val(),
+			'type': $('input[name=type]:checked').val(),
 			'position': $('input[name=position]').val(),
 		  'first_name': $('input[name=first_name]').val(),
 		  'last_name': $('input[name=last_name]').val(),
