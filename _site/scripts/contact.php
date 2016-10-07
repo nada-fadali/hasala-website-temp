@@ -1,6 +1,7 @@
 <?php
 
-if(isset($_POST['email'])) {
+if(isset($_POST['type'])) {
+
 	function died($error) {
 		// your error code can go here
 		echo "Error yo";
@@ -20,11 +21,32 @@ if(isset($_POST['email'])) {
 	$last_name = $_POST['last_name']; // required
 	$message = $_POST['message']; // required
 	$position = $_POST['position'];
-	$type = $_POST['type'];
+
+	switch ($_POST['type']) {
+		case '0':
+			$type = "Corporate"
+			break;
+		case '1':
+			$type = "Individual"
+			break;
+		case '2':
+			$type = "CSR"
+			break;
+		case '3':
+			$type = "Media"
+			break;
+		case '4':
+			$type = "NGO"
+			break;
+
+		default:
+			$type = "unknown"
+			break;
+	}
 
 	// EDIT
 	$email_to = "nada.fadali@gmail.com";
-	$email_subject = $first_name . "Contacted Hasala [".$type."]";
+	$email_subject = $first_name . " contacted Hasala [".$type."]";
 
 
 	function clean_string($string) {
@@ -32,16 +54,15 @@ if(isset($_POST['email'])) {
 		return str_replace($bad,"",$string);
 	}
 
-	$email_message .= .clean_string($first_name)." ".clean_string($last_name)." sent this message \n";
+	$email_message .= clean_string($first_name)." ".clean_string($last_name)." sent this message: \n";
 	$email_message .= $message;
 
 	// create email headers
 
-	$headers = 'From: '.$email_from."\r\n".
-	'Reply-To: '.$email_from."\r\n" .
+	$headers = 'From: '.$email_to."\r\n".
+	'Reply-To: '.$email_to."\r\n" .
 	'X-Mailer: PHP/' . phpversion();
-	@mail($email_to, $email_subject, $email_message, $headers);
+	echo mail($email_to, $email_subject, $email_message, $headers);
 
-
+}
 ?>
-
