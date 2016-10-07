@@ -24,23 +24,24 @@ if(isset($_POST['type'])) {
 
 	switch ($_POST['type']) {
 		case '0':
-			$type = "Corporate"
+			$type = "Corporate";
 			break;
 		case '1':
-			$type = "Individual"
+			$type = "Individual";
 			break;
 		case '2':
-			$type = "CSR"
+			$type = "CSR";
 			break;
 		case '3':
-			$type = "Media"
+			$type = "Media";
 			break;
+
 		case '4':
-			$type = "NGO"
+			$type = "NGO";
 			break;
 
 		default:
-			$type = "unknown"
+			$type = "unknown";
 			break;
 	}
 
