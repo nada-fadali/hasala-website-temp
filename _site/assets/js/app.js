@@ -20,32 +20,34 @@ $(function(){
 	});
 
 
-	$('form.contact#contact').on('submit', function(ev){
-		ev.preventDefault();
+	$('form.contact#contact').on('submit', function(event){
+		event.preventDefault();
 
 		var data = {
 			'type': $('input[name=type]:checked').val(),
 			'position': $('input[name=position]').val(),
 		  'first_name': $('input[name=first_name]').val(),
 		  'last_name': $('input[name=last_name]').val(),
+		  'email': $('input[name=email]').val(),
+		  'phone': $('input[name=phone]').val(),
 		  'message': $('textarea[name=message]').val()
 		};
 
-
-	// process the form
-	$.ajax({
-		type: 'POST',
-		url : '/scripts/contact.php',
-		data: data
-	}).done(function(data) {
-			// log data to the console so we can see
-			console.log(data);
-			// here we will handle errors and validation messages
-		});
-
+		// process the form
+		$.ajax({
+			type: 'POST',
+			url : '/scripts/contact.php',
+			data: data
+		}).done(function(data) {
+				console.log(data);
+				$('#contact-msg').html("Thank you. Your message was submitted.");
+		}).fail(function() {
+    		$('#contact-msg').html("We are sorry, seems like we are having technical diffculties. Try contacting us through our facebook page. Thank you.");
+  	}).always(function() {
+  			$('#contact-submit').prop('disabled', true);
+  	});
 
 	});// end on form submit
 
 
-
-});
+}); // end of function ready

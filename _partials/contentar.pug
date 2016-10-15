@@ -67,13 +67,19 @@
 				.form-group.col
 					label اسم العائلة
 					input(type="text" name="last_name")
+				.form-group.col
+					label البريد الالكتروني:
+					input(type="email", name="email")
+				.form-group.col
+					label رقم الهاتف:
+					input(type="tel", name="phone")
 				.form-group
 					label الوظيفة
 					input(type="text" name="position")
 				.form-group
 					label الرسالة
 					textarea(name="message")
-				button(type="submit") ارسل
+				button(type="submit" id="contact-submit") ارسل
 
 
 	.articles.clearfix

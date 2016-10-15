@@ -40,6 +40,8 @@
 			}
 
 			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
 			textarea{
 				background:transparent;
 				border: 1px solid #d8d8d8;
@@ -73,6 +75,14 @@
 				padding: 7px 37px;
 				border: none;
 				text-transform: uppercase;
+			}
+
+			button[disabled]{
+				background-color: rgba(146, 197, 16, 0.6);
+			}
+
+			#contact-msg{
+				margin-top: 10px;
 			}
 
 			.form-group.radio{
