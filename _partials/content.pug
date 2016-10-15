@@ -80,7 +80,7 @@ header
 				input(type="text", name="position")
 			.form-group
 				label Message:
-				textarea(name="message")
+				textarea(name="message" required)
 			button(type="submit" id="contact-submit") Send
 			.span(id="contact-msg")
 
@@ -88,21 +88,18 @@ header
 .articles.clearfix
 	h1 Featured in:
 	.content
-		a(href=thinkMarketing) 
-			img(src="assets/img/thinkmarketing.png")
-			| Think Marketing
-		a(href=masry) 
-			img(src="assets/img/masry.png")
-			| Masry Elyoum
-		a(href=ahram) 
-			img(src="assets/img/ahram.png")
-			| Ahram
 		a(href=wamda) 
 			img(src="assets/img/wamda.png")
 			| Wamda
 		a(href=huffPost) 
 			img(src="assets/img/huffpost.png")
 			| The Huffington Post
+		a(href=thinkMarketing) 
+			img(src="assets/img/thinkmarketing.png")
+			| Think Marketing
+		a(href=masry) 
+			img(src="assets/img/masry.png")
+			| Masry Elyoum		
 
 footer
 	.content
